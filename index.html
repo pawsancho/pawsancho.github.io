@@ -1,7 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Centered Image Homepage</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set background gradient */
+        body {
+            background: linear-gradient(to bottom, #001f3f, #0074D9); /* Dark blue gradient */
+            font-family: Arial, sans-serif;
+            color: #fff; /* Text color on top of the gradient background */
+            min-height: 100vh; /* Ensure the body covers at least the full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        /* Container for the gradient background and main content */
+        .content {
+            flex-grow: 1; /* Expand to fill available space */
+            display: flex; /* Use flex layout for centered content */
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+            text-align: center;
+        }
+
+        /* Style for the main image */
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Center the image horizontally */
+        }
+
+        /* Sticky footer styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Welcome to AWS Demo ThousandEyes Page</h1>
+    </header>
+
+    <!-- Container for the gradient background and main content -->
+    <div class="content">
+        <!-- Main image on the page -->
+        <img src="img/2.png" alt="Main Image" class="main-image">
+    </div>
+
+    <footer>
+        <p>&copy; Adoption Engineer Workshop 2023</p>
+    </footer>
 </body>
 </html>
